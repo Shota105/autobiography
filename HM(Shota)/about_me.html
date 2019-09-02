@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>About me</title>
+        <style>
+            body {
+                margin: 0;
+            }
+
+            .link {
+                text-align: center;
+                background-color:gray;
+                font-size: 20px;
+                display: block;
+                position: fixed;
+                margin: 0;
+                padding: 0;
+                width: 100%;
+            }
+
+            .link li {
+                display: inline-block;
+                padding: 30 25;
+                margin: 0;
+                color: white;
+                width: 100px;
+            }
+
+            .link li:hover {
+                background-color: orange;
+                color: green;
+            }
+
+            a {
+                text-decoration: none;
+            }
+
+            h1 {
+                text-align: center;
+                color: gray;
+            }
+
+            div {
+                box-sizing: border-box;
+                color: #FFF;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100%;
+                padding: 5%;
+            }
+
+            .parallax_bg {
+                background-image: url(images/me.jpg);
+                background-attachment: fixed;
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+            }
+
+            .scrollbox {
+                background-color: #111;
+            }
+
+            p {
+                font-size: 25px;
+                letter-spacing: 0.5em;
+                line-height: 2em;
+            }
+
+            span {
+                background-color: rgba(50, 50, 50, 0.8)
+            }
+
+            .name {
+                font-size: 100px;    
+            }
+
+            .bye {
+                font-size: 50px;
+            }
+
+        </style>
+    </head>
+    <body>
+
+        <ul class="link">
+            <a href="about_me.html">
+                <li>About me</li>
+            </a>
+            <a href="social.html">
+                <li>Social</li>
+            </a>
+            <a href="favorites.html">
+                <li>Favorites</li>
+            </a>
+        </ul>
+
+        <div class="parallax_bg name"><span>Shota Sato</span></div>
+        <div class="scrollbox">
+            <p> Hi! My name is Shota Sato. Nice to meet you. <br>
+                I am a student. I am from Hokkaido in Japan. <br>
+                I love reading books, watching movie.
+            </p>
+        </div>
+        <div class="parallax_bg bye"><span>See You When I See You</span></div>
+
+    </body>
+</html>

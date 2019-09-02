@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <title>Contact Me</title>
+    </head>
+    <body>
+        
+        <a href="index.html">Index</a>
+
+        <form action="">
+            <label for="">Name: </label>
+            <input type="text"
+                    name="name"
+                    placeholder="Enter your name" />   <!-- 分かりやすいように初期値を入れる -->
+            <br>
+            <label for="password">Password: </label> <!-- for と　id を設定すると文字をクリックしたとき自動的に入力欄に行く -->
+            <input type="password"
+                    name="password"
+                    id="password"
+                    placeholder="Enter your Password"
+                    maxlength="5"
+                    minlength="1" />
+            <br>
+            <input type="radio" name="gender" value="Male"> Male    <!-- 同じ名前を使うと一つしか選択できない -->
+            <input type="radio" name="gender" value="Female"> Female <!-- radio check データを送信するため value は必要 -->
+            <br>
+            <label>Field of Interest</label>
+            <br>
+            <input type="checkbox" name="interest" value="Programming"> Programming
+            <br>
+            <input type="checkbox" name="interest" value="Design"> Design
+            <br>
+            <input type="checkbox" name="interest" value="Business"> Business
+            <br>
+            <label for="">Email</label>
+            <input type="email" name="email" placeholder="Enter your email"> <!-- ミスがあると自動で注意書きがでる -->
+            <br>
+
+            <label for="">Comments:</label>
+            <br>
+            <textarea name="" 
+                        id="" 
+                        cols="50" 
+                        rows="5" 
+                        placeholder="Do you have any comments?"
+                        name="comments">My comment is
+            </textarea> <!-- default value OK  Spaceを入れるとすごいことに-->
+            <br>
+            
+            <label for="">City</label>
+            <select name="city" id="">
+                <option value="Cebu">Cebu</option>
+                <option value="Tokyo">Tokyo</option>
+                <option value="Bangkok">Bangkok</option>
+            </select>
+            <br>
+            
+            <input type="reset" value="Reset the form" /> <!-- 文字を全て消す -->
+            <br>        
+            <input type="submit" value="Send">
+        </form>
+
+    </body>
+</html>
